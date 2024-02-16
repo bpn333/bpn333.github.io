@@ -10,6 +10,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 5% 5%;
+    flex-wrap: wrap;
 }
 #top-section > span{
     color: #EEEEEE;
@@ -39,7 +40,8 @@ body{
 ::-webkit-scrollbar{
     width: 0;
 }
-#about{
+#about,
+#home{
     margin: 3% 3%;
 }
 .box{
@@ -63,8 +65,7 @@ body{
     color: yellow;
 }
 .box > img{
-    flex: 1;
-    width: 330px;
+    width: 500px;
     border-radius: 100%;
     overflow: hidden;
     transition: all 0.3s;
@@ -85,9 +86,10 @@ body{
     margin: 10px;
     text-decoration: none;
     font-style: none;
-    border-radius: 5%;
     padding: 10px;
-    background-color: #393E46;
+    background-color: transparent;
+    border: 2px solid #00ADB5;
+    color: #00ADB5;
     transition: all 0.3s;
 }
 .proje:hover{
@@ -98,6 +100,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 #contact > a{
     font-size: 90px;
