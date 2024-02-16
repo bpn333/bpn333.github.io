@@ -30,6 +30,7 @@ body{
     font-size: 30px;
     color: #00ADB5;
     transition: all 0.3s;
+    flex-wrap: wrap;
 }
 #top-section > nav > a:hover{
     scale: 1.3;
@@ -38,12 +39,15 @@ body{
 ::-webkit-scrollbar{
     width: 0;
 }
+#about{
+    margin: 3% 3%;
+}
 .box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 3% 3%;
+    flex-wrap: wrap;
 }
 .box > p{
     flex: 3;
@@ -53,6 +57,7 @@ body{
     padding: 10px;
     line-height: 30px;
     word-spacing: 5px;
+    transition: all 0.3s;
 }
 .box > p:hover{
     color: yellow;
@@ -69,6 +74,26 @@ body{
     filter: saturate(2);
     border: 3px double lime;
 }
+#project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3% 3%;
+}
+.proje{
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-style: none;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: #393E46;
+    transition: all 0.3s;
+}
+.proje:hover{
+    background-color: #00ADB5;
+    color: lime;
+}
 #contact{
     display: flex;
     justify-content: space-around;
@@ -77,8 +102,11 @@ body{
 #contact > a{
     font-size: 90px;
     transition: all 0.3s;
+    color:#00ADB5;
 }
 #contact > a:hover{
     scale: 1.5;
     transform: translateY(-10px);
+    color: lime;
+    flex-wrap: wrap;
 }
