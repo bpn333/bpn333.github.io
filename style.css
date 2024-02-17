@@ -60,22 +60,37 @@ body{
     line-height: 30px;
     word-spacing: 5px;
     transition: all 0.3s;
+    overflow: hidden;
 }
 .box > p:hover{
-    color: yellow;
+    color: #F8E559;
 }
 .box > img{
     width: 500px;
     border-radius: 100%;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 3s;
     margin: 5%;
 }
 .box > img:hover{
-    filter: saturate(2);
-    border: 3px double lime;
+    filter: contrast(2);
+    border: 3px solid lime;
 }
-#project{
+#project > h1,
+#skill > h1,
+#contact > h1{
+    text-align: center;
+    color:#EEEEEE;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+#project > h1:hover,
+#skill > h1:hover,
+#contact > h1:hover{
+    color:lime;
+    transform: translateY(-10px);
+}
+#projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,28 +107,55 @@ body{
     color: #00ADB5;
     transition: all 0.3s;
     text-wrap: wrap;
-}
-.projetitle{
-    text-wrap: wrap;
+    overflow: hidden;
 }
 .proje:hover{
     background-color: #00ADB5;
     color: lime;
 }
-#contact{
+#contacts{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-#contact > a{
+#contacts > a{
     font-size: 90px;
     transition: all 0.3s;
     color:#00ADB5;
 }
-#contact > a:hover{
+#contacts > a:hover{
     scale: 1.5;
     transform: translateY(-10px);
     color: lime;
     flex-wrap: wrap;
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.sk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #F8E559;
+    transition: all 0.3s;
+}
+.sk:hover{
+    border: 3px solid #00ADB5;
+    color: lime;
+}
+.sk > i{
+    font-size: 80px;
+    margin-right: 1vw;
+    transition: color 0.3s;
+}
+.sk > progress{
+    width: 50vw;
+    height: 30px;
 }
