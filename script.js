@@ -1,4 +1,4 @@
-url = 'https://api.github.com/users/bipin333/repos'
+url = 'https://api.github.com/users/bpn333/repos'
 container = document.getElementById('projects')
 fetch(url).then(r => r.json()).then(datas =>{
     datas.forEach(repo =>{
