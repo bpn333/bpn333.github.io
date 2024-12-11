@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
+
+body {
     font-family: "Poppins", sans-serif;
     background-color: #222831;
     user-select: none;
 }
-#top-section{
+
+#top-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,17 +14,20 @@ body{
     margin: 5% 5%;
     flex-wrap: wrap;
 }
-#top-section > span{
+
+#top-section>span {
     color: #EEEEEE;
     font-size: 50px;
     font-weight: 500;
     flex: 3;
     transition: all 0.8s;
 }
-#top-section > span:hover{
+
+#top-section>span:hover {
     transform: translateY(-20px);
 }
-#top-section > nav > a{
+
+#top-section>nav>a {
     flex: 1;
     display: inline-flex;
     margin: 10px;
@@ -33,25 +38,30 @@ body{
     transition: all 0.3s;
     flex-wrap: wrap;
 }
-#top-section > nav > a:hover{
+
+#top-section>nav>a:hover {
     scale: 1.3;
-    color:#EEEEEE;
+    color: #EEEEEE;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0;
 }
+
 #about,
-#home{
+#home {
     margin: 3% 3%;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.box > p{
+
+.box>p {
     flex: 3;
     color: #393E46;
     font-size: 20px;
@@ -62,41 +72,49 @@ body{
     transition: all 0.3s;
     overflow: hidden;
 }
-.box > p:hover{
+
+.box>p:hover {
     color: #F8E559;
 }
-.box > img{
+
+.box>img {
     width: 500px;
     border-radius: 100%;
     overflow: hidden;
     transition: all 3s;
     margin: 5%;
 }
-.box > img:hover{
+
+.box>img:hover {
     filter: contrast(2);
-    border: 3px solid lime;
+    border: 3px solid black;
 }
-#project > h1,
-#skill > h1,
-#contact > h1{
+
+#project>h1,
+#skill>h1,
+#contact>h1 {
     text-align: center;
-    color:#EEEEEE;
+    color: #EEEEEE;
     font-size: 30px;
     transition: all 0.3s;
 }
-#project > h1:hover,
-#skill > h1:hover,
-#contact > h1:hover{
-    color:lime;
+
+#project>h1:hover,
+#skill>h1:hover,
+#contact>h1:hover {
+    color: lime;
     transform: translateY(-10px);
 }
-#projects{
+
+#projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 3% 3%;
+    justify-content: center;
 }
-.proje{
+
+.proje {
     font-size: 20px;
     margin: 10px;
     text-decoration: none;
@@ -109,35 +127,41 @@ body{
     text-wrap: wrap;
     overflow: hidden;
 }
-.proje:hover{
+
+.proje:hover {
     background-color: #00ADB5;
     color: lime;
 }
-#contacts{
+
+#contacts {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-#contacts > a{
+
+#contacts>a {
     font-size: 90px;
     transition: all 0.3s;
-    color:#00ADB5;
+    color: #00ADB5;
 }
-#contacts > a:hover{
+
+#contacts>a:hover {
     scale: 1.5;
     transform: translateY(-10px);
     color: lime;
     flex-wrap: wrap;
 }
-#skills{
+
+#skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.sk{
+
+.sk {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,16 +170,19 @@ body{
     color: #F8E559;
     transition: all 0.3s;
 }
-.sk:hover{
+
+.sk:hover {
     border: 3px solid #00ADB5;
     color: lime;
 }
-.sk > i{
+
+.sk>i {
     font-size: 80px;
     margin-right: 1vw;
     transition: color 0.3s;
 }
-.sk > progress{
+
+.sk>progress {
     width: 50vw;
     height: 30px;
 }
