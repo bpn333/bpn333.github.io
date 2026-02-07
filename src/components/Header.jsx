@@ -55,10 +55,8 @@ export default function Header({ theme, setTheme }) {
                         className="md:hidden px-4 pb-4 flex flex-col gap-3 text-sm"
                     >
                         <NavLink onClick={() => setOpen(false)} to="/" className={navItem}>Home</NavLink>
-                        <NavLink onClick={() => setOpen(false)} to="/about" className={navItem}>About</NavLink>
                         <NavLink onClick={() => setOpen(false)} to="/projects" className={navItem}>Projects</NavLink>
                         <NavLink onClick={() => setOpen(false)} to="/skills" className={navItem}>Skills</NavLink>
-                        <NavLink onClick={() => setOpen(false)} to="/contact" className={navItem}>Contact</NavLink>
                     </motion.nav>
                 )}
             </AnimatePresence>
