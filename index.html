@@ -40,8 +40,20 @@
 
     <!-- Theme color -->
     <meta name="theme-color" content="#111827" />
-    <script type="module" crossorigin src="/assets/index-BMeWYUnr.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BIcXMGBO.css">
+
+    <!-- Dark/Light chooser -->
+    <script>
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+
+      if (saved === "dark" || (!saved && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BuoGtEUf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CBTSlcoX.css">
   </head>
   <body>
     <div id="root"></div>
