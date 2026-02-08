@@ -1,30 +1,40 @@
 import { useEffect, useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
+import Experience from './pages/Experience'
 
 function App() {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'dark'
-  )
+    () => document.documentElement.classList.contains('dark') ? "dark" : "light"
+  );
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
 
   useEffect(() => {
     const root = document.documentElement
-    if (theme === 'dark') root.classList.add('dark')
-    else root.classList.remove('dark')
+    const isDark = root.classList.contains('dark')
+
+    if (theme === 'dark' && !isDark) root.classList.add('dark')
+    if (theme === 'light' && isDark) root.classList.remove('dark')
+
     localStorage.setItem('theme', theme)
   }, [theme])
 
   return (
-    <div className="min-h-screen bg-background text-text transition-colors">
+    <div className="min-h-screen bg-background text-text">
       <Header theme={theme} setTheme={setTheme} />
       <main className="max-w-5xl mx-auto px-4 py-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/experience' element={<Experience />} />
         </Routes>
       </main>
     </div>

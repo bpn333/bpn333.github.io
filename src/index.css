@@ -10,18 +10,23 @@
 }
 
 :root {
-  --color-background: #f9fafb;
-  --color-text: #111827;
+  --background: #f9fafb;
+  --text: #111827;
   scrollbar-width: thin;
 }
 
 .dark {
-  --color-background: #0b1220;
-  --color-text: #e6eef8;
+  --background: #0b1220;
+  --text: #e6eef8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-text: var(--text);
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--background);
+  color: var(--text);
   font-family: "Roboto Mono";
 }

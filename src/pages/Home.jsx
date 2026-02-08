@@ -7,7 +7,7 @@ export default function Home() {
         <div>
             <motion.header initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                 <h1 className="text-3xl font-bold">Hi — I am Bipin Lamsal.</h1>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
                     I'm a final-year Computer Science Engineering student who enjoys building real,
                     working software instead of just prototypes. My work focuses on modern web
                     applications, performance, and clean system design.
@@ -16,11 +16,11 @@ export default function Home() {
 
             <section className="mt-10">
                 <motion.div
-                    className="flex flex-col gap-10 justify-center md:flex-row md:gap-20 items-center"
+                    className="flex flex-col gap-10 justify-center sm:flex-row sm:gap-20 items-center"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                 >
-                    <div className="w-56 h-56 rounded-full overflow-hidden shadow">
+                    <div className="w-63 h-63 rounded-full overflow-hidden shadow">
                         <img src="/imgs/bipin.jpg" alt="chill" className="w-full h-full object-cover" />
                     </div>
 
@@ -33,19 +33,24 @@ export default function Home() {
                             Education : Computer Science Engineer<br />
                             Email : <a href="mailto:bipinlamsal2004@gmail.com" className='text-indigo-600 dark:text-indigo-300'>bipinlamsal2004@gmail.com</a><br />
                             Religion: Hindu<br />
+                            Location: Burari, Delhi<br />
                         </p>
-                        <div className='mt-3 flex gap-5 items-center'>
+                        <motion.div
+                            className='mt-3 flex items-center'
+                            initial={{ gap: "0px", x: -20 }}
+                            animate={{ gap: "15px", x: 0 }}
+                        >
                             {
                                 contacts?.map((dta) => (
-                                    <a key={dta.name} href={dta.link} title={dta.name}>
+                                    <a className='hover:scale-110 transition-transform' key={dta.name} href={dta.link} title={dta.name} target="_blank">
                                         <dta.icon className="hover:text-indigo-600 dark:hover:text-indigo-300" />
                                     </a>
                                 ))
                             }
-                        </div>
+                        </motion.div>
                         <div className="mt-4 flex gap-5">
-                            <Link to="/projects" className="px-4 py-2 bg-indigo-600 text-white rounded">See projects</Link>
-                            <Link to="/skills" className="px-4 py-2 border rounded">Skills</Link>
+                            <Link to="/projects" className="px-4 py-2 bg-indigo-600 text-white rounded border border-indigo-600 hover:bg-white hover:text-indigo-600">See projects</Link>
+                            <Link to="/skills" className="px-4 py-2 border rounded text-text bg-background hover:text-background hover:bg-text">Skills</Link>
                         </div>
                     </div>
                 </motion.div>

@@ -36,6 +36,14 @@ const projects = [
     tags: ["Django", "Python", "SQLite", "ERP", "Backend"],
     github: "https://github.com/bpn333/ERP-PORTAL",
   },
+  {
+    name: "Godot Car Racing Game",
+    description:
+      "A racing game built in Godot featuring multiple cars, maps, lap-time tracking, and integrated music and sound effects. Developed to explore game physics, scene architecture, and real-time gameplay systems.",
+    tags: ["Godot", "Game Development", "Physics", "Audio", "Racing Game"],
+    github: "https://github.com/bpn333/godot/tree/master/car",
+    live: "https://github.com/bpn333/godot/releases/tag/v1.0.0",
+  },
 ];
 
 export default projects;

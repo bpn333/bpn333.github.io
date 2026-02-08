@@ -40,6 +40,18 @@
 
     <!-- Theme color -->
     <meta name="theme-color" content="#111827" />
+
+    <!-- Dark/Light chooser -->
+    <script>
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+
+      if (saved === "dark" || (!saved && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

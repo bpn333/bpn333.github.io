@@ -14,7 +14,7 @@ export default function Projects() {
                 </p>
             </motion.header>
 
-            <section className="mt-8 grid gap-6 md:grid-cols-2">
+            <section className="mt-8 grid gap-6 sm:grid-cols-2">
                 {projects.map((project, i) => (
                     <motion.div
                         key={project.name}
@@ -34,7 +34,7 @@ export default function Projects() {
                                 {project.tags.map(tag => (
                                     <span
                                         key={tag}
-                                        className="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-800"
+                                        className="text-xs text-text px-2 py-1 rounded bg-gray-100 dark:bg-gray-800 hover:bg-text hover:text-gray-100 dark:hover:text-gray-800 cursor-pointer"
                                     >
                                         {tag}
                                     </span>

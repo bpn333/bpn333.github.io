@@ -14,22 +14,22 @@ export default function Skills() {
                 </p>
             </motion.header>
 
-            <section className="mt-8 grid gap-6 md:grid-cols-2">
+            <section className="mt-8 grid gap-6 sm:grid-cols-2">
                 {skills.map((group, i) => (
                     <motion.div
                         key={group.category}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.08 }}
-                        className="p-5 rounded-lg border bg-white dark:bg-gray-900 dark:border-gray-800"
+                        className="p-5 rounded-lg border bg-transparent dark:bg-gray-900 dark:border-gray-800"
                     >
                         <h2 className="text-lg font-semibold">{group.category}</h2>
 
-                        <div className="mt-3 flex flex-wrap gap-2">
+                        <div className="mt-4 flex flex-wrap gap-2">
                             {group.items.map(skill => (
                                 <span
                                     key={skill}
-                                    className="text-sm px-3 py-1 rounded bg-gray-100 dark:bg-gray-800"
+                                    className="text-sm text-text px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 hover:bg-text hover:text-gray-100 dark:hover:text-gray-800 cursor-pointer"
                                 >
                                     {skill}
                                 </span>
