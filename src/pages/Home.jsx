@@ -21,7 +21,7 @@ export default function Home() {
                     animate={{ opacity: 1, x: 0 }}
                 >
                     <div className="w-63 h-63 rounded-full overflow-hidden shadow">
-                        <img src="/imgs/bipin.jpg" alt="chill" className="w-full h-full object-cover" />
+                        <img src="/imgs/bipin.jpg" alt="Bipin Lamsal" fetchPriority='high' className="w-full h-full object-cover" />
                     </div>
 
                     <div className="flex-1/2 grow-0">
