@@ -25,6 +25,10 @@ export default function Header({ theme, setTheme }) {
         {
             name: "Experience",
             path: "/experience"
+        },
+        {
+            name: "Config",
+            path: "/config"
         }
     ]
 

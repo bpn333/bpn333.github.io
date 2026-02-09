@@ -49,7 +49,7 @@ export default function Home() {
                             }
                         </motion.div>
                         <div className="mt-4 flex gap-5">
-                            <Link to="/projects" className="px-4 py-2 bg-indigo-600 text-white rounded border border-indigo-600 hover:bg-white hover:text-indigo-600">See projects</Link>
+                            <Link to="/projects" className="px-4 py-2 bg-indigo-600 text-neutral-50 rounded border border-indigo-600 hover:bg-neutral-50 hover:text-indigo-600">See projects</Link>
                             <Link to="/skills" className="px-4 py-2 border rounded text-text bg-background hover:text-background hover:bg-text">Skills</Link>
                         </div>
                     </div>

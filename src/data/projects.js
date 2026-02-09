@@ -20,6 +20,7 @@ const projects = [
       "A lightweight tabbed text editor inspired by classic Notepad, featuring multi-document support, keyboard-driven workflow, font controls, and built-in file management. Created as an experiment in desktop-style UI design and usability.",
     tags: ["Text Editor", "Java", "Java Swing", "Desktop App"],
     github: "https://github.com/bpn333/notepad-plus-plus-plus",
+    live: "https://github.com/bpn333/NotepadPlusPlusPlus/releases/tag/final",
   },
   {
     name: "Marketplace Platform",

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Experience from './pages/Experience'
+import Config from './pages/Config'
 
 function App() {
   const [theme, setTheme] = useState(
@@ -35,6 +36,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/experience' element={<Experience />} />
+          <Route path='/config' element={<Config />} />
         </Routes>
       </main>
     </div>

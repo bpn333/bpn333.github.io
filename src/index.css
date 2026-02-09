@@ -9,6 +9,10 @@
   font-display: swap;
 }
 
+@theme {
+  --font-roboto: "Roboto Mono";
+}
+
 :root {
   --background: #f9fafb;
   --text: #111827;
