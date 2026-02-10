@@ -1,9 +1,8 @@
 import CodeCard from "../components/CodeCard"
-import { motion } from "motion/react"
 
 export default function Config() {
     return (
-        <motion.section className='flex justify-center' initial={{ y: 50 }} animate={{ y: 0 }}>
+        <section className='flex justify-center'>
             <CodeCard variableName='bipinLamsal' data={{
                 "tags": [
                     "Open source enthusiast",
@@ -64,6 +63,6 @@ export default function Config() {
                 "randomFact": "Can debug code better at 2 AM than 2 PM"
             }
             } />
-        </motion.section >
+        </section >
     )
 }
