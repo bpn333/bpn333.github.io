@@ -56,6 +56,11 @@ export default function Config() {
                     "Listening to music",
                     "Doomscrolling Shorts"
                 ],
+                "achievements": [
+                    "Fixed a bug by doing nothing",
+                    "Solved an issue after explaining it to someone else",
+                    "Spent 3 hours debugging a typo"
+                ],
                 "randomFact": "Can debug code better at 2 AM than 2 PM"
             }
             } />

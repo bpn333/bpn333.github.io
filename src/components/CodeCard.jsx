@@ -132,7 +132,8 @@ const CodeCard = ({ data, variableName = "dev" }) => {
                 className="font-roboto py-5 px-3 sm:px-6 leading-relaxed text-neutral-800 dark:text-neutral-100 whitespace-pre-wrap wrap-break-word overflow-x-auto" >
                 <Ln no={line++} />const <Var>{variableName}</Var> ={" "}
                 {renderObject(data, 1)}
-                {";\n\n"}
+                {";\n"}
+                <Ln no={line++} />{"\n"}
                 <Ln no={line++} /><Var>{variableName}</Var>.init();
             </pre>
         </div>
