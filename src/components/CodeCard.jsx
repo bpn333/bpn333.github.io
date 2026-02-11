@@ -97,11 +97,11 @@ const generateMarkdown = (data, variableName) => {
             return Object.entries(val)
                 .map(([k, v]) => {
                     if (Array.isArray(v)) {
-                        return `${indent}**${k}:**\n${formatValue(v, level + 1)}`;
+                        return `${indent}- **${k}:**\n${formatValue(v, level + 1)}`;
                     } else if (typeof v === 'object' && v !== null) {
-                        return `${indent}**${k}:**\n${formatValue(v, level + 1)}`;
+                        return `${indent}- **${k}:**\n${formatValue(v, level + 1)}`;
                     }
-                    return `${indent}**${k}:** ${v}`;
+                    return `${indent}- **${k}:** ${v}`;
                 })
                 .join('\n');
         }
