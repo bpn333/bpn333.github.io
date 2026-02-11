@@ -21,7 +21,7 @@ export default function Skills() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.08 }}
-                        className="p-5 rounded-lg border bg-transparent dark:bg-gray-900 dark:border-gray-800"
+                        className="p-5 rounded-lg border bg-neutral-50 dark:bg-gray-900 dark:border-gray-800"
                     >
                         <h2 className="text-lg font-semibold">{group.category}</h2>
 
