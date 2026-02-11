@@ -23,9 +23,9 @@ Please change the parent <Route path="${L}"> to <Route path="${L==="/"?"*":`${L}
 `]},c)),D.jsx(Da,{no:s.current++}),"  ".repeat(Math.max(i-1,0)),"}"]})},CM=(n,i)=>{let s=`# ${i}
 
 `;const r=(c,h=0)=>{const f="  ".repeat(h);return Array.isArray(c)?c.map(m=>`${f}- ${typeof m=="object"?JSON.stringify(m):m}`).join(`
-`):typeof c=="object"&&c!==null?Object.entries(c).map(([m,y])=>Array.isArray(y)?`${f}**${m}:**
-${r(y,h+1)}`:typeof y=="object"&&y!==null?`${f}**${m}:**
-${r(y,h+1)}`:`${f}**${m}:** ${y}`).join(`
+`):typeof c=="object"&&c!==null?Object.entries(c).map(([m,y])=>Array.isArray(y)?`${f}- **${m}:**
+${r(y,h+1)}`:typeof y=="object"&&y!==null?`${f}- **${m}:**
+${r(y,h+1)}`:`${f}- **${m}:** ${y}`).join(`
 `):`${f}${c}`};return Object.entries(n).forEach(([c,h])=>{s+=`## ${c}
 `,s+=r(h)+`
 
