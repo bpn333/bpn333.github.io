@@ -49,6 +49,7 @@ export default function Header({ theme, setTheme }) {
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         whileTap={{ scale: 0.95 }}
                         className="ml-3 p-2 rounded bg-gray-100 dark:bg-gray-700 cursor-pointer"
+                        aria-label={theme === 'dark' ? "Switch to light mode" : "Switch to dark mode"}
                     >
                         {theme === 'dark' ? <SunDim /> : <Moon />}
                     </motion.button>
@@ -59,6 +60,7 @@ export default function Header({ theme, setTheme }) {
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         whileTap={{ scale: 0.95 }}
                         className="p-2 rounded bg-gray-100 dark:bg-gray-700 cursor-pointer"
+                        aria-label={theme === 'dark' ? "Switch to light mode" : "Switch to dark mode"}
                     >
                         {theme === 'dark' ? <SunDim /> : <Moon />}
                     </motion.button>
@@ -66,6 +68,7 @@ export default function Header({ theme, setTheme }) {
                     <button
                         onClick={() => setOpen(!open)}
                         className="p-2 text-lg cursor-pointer"
+                        aria-label="Toggle Menu"
                     >
                         <Menu />
                     </button>
