@@ -9,7 +9,7 @@ export default function Experience() {
                 animate={{ opacity: 1, y: 0 }}
             >
                 <h1 className="text-3xl font-bold">Experience</h1>
-                <p className="mt-2 text-gray-600 dark:text-gray-300 max-w-2xl">
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
                     Companies and teams I've worked with while building real-world software.
                 </p>
             </motion.header>
@@ -67,6 +67,55 @@ export default function Experience() {
                                 </div>
                             </blockquote>
                         )}
+
+                        {job.contacts && (
+                            <motion.div
+                                className="flex gap-4 justify-end mt-3"
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true }}
+                                variants={{
+                                    show: {
+                                        transition: {
+                                            staggerChildren: 0.08
+                                        }
+                                    }
+                                }}
+                            >
+                                {job.contacts.map((dta, i) => (
+                                    <motion.a
+                                        key={dta.name}
+                                        href={dta.link}
+                                        target="_blank"
+                                        title={dta.name}
+                                        variants={{
+                                            hidden: {
+                                                opacity: 0,
+                                                y: 20,
+                                                scale: 0.8
+                                            },
+                                            show: {
+                                                opacity: 1,
+                                                y: 0,
+                                                scale: 1
+                                            }
+                                        }}
+                                        whileHover={{
+                                            y: -6,
+                                            scale: 1.15
+                                        }}
+                                        whileTap={{ scale: 0.95 }}
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 350,
+                                            damping: 18
+                                        }}
+                                    >
+                                        <dta.icon />
+                                    </motion.a>
+                                ))}
+                            </motion.div>)
+                        }
                     </motion.div>
                 ))}
             </section>

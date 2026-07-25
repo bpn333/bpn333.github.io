@@ -1,15 +1,25 @@
 const projects = [
   {
-    name: "CMS System",
+    name: "CMS System | FormalMonkey",
     description:
-      "A drag-and-drop website builder that allows users to edit components and request website. Then we bundle the page with custom CMS and send to client. Currently under active development in collaboration with WebMedia Infotech.",
-    tags: ["MongoDB", "Express", "React", "Node.js", "VPS", "Nginx"],
-    live: "http://cms.wmiserver.cloud/",
+      "A multi-tenant CMS platform that enables businesses to build, deploy, and manage websites without technical expertise. Users can design their homepage in an interactive demo, deploy it instantly, and subscribe to a hosting plan with a custom or platform-provided domain. The platform includes a visual page editor, SEO tools, form management, analytics, multi-user collaboration, backups, versioned updates with optional upgrades, and a scalable infrastructure that receives continuous feature and security updates.",
+    tags: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "VPS",
+      "Nginx",
+      "Linux",
+      "Cloudflare",
+      "Shell",
+    ],
+    live: "http://cms.formalmonkey.com",
   },
   {
     name: "ChripDown",
     description:
-      "An open social platform inspired by Twitter that supports Markdown-based posts, Google authentication, and full user customization. Built to explore unrestricted expression, real-time interaction, and scalable frontend architecture.",
+      "An open social platform inspired by Twitter that supports Markdown-based posts, Google authentication, customizable user profiles, and a modern responsive interface. Built to explore unrestricted expression, real-time interaction, and scalable frontend architecture while delivering a smooth and engaging social experience.",
     tags: ["React", "Firebase", "Markdown", "Social Platform"],
     github: "https://github.com/bpn333/chripdown",
     live: "https://chripdown.vercel.app",
@@ -20,7 +30,7 @@ const projects = [
       "A lightweight tabbed text editor inspired by classic Notepad, featuring multi-document support, keyboard-driven workflow, font controls, and built-in file management. Created as an experiment in desktop-style UI design and usability.",
     tags: ["Text Editor", "Java", "Java Swing", "Desktop App"],
     github: "https://github.com/bpn333/notepad-plus-plus-plus",
-    live: "https://github.com/bpn333/NotepadPlusPlusPlus/releases/tag/final",
+    build: "https://github.com/bpn333/NotepadPlusPlusPlus/releases/tag/final",
   },
   {
     name: "Marketplace Platform",
@@ -43,7 +53,7 @@ const projects = [
       "A racing game built in Godot featuring multiple cars, maps, lap-time tracking, and integrated music and sound effects. Developed to explore game physics, scene architecture, and real-time gameplay systems.",
     tags: ["Godot", "Game Development", "Physics", "Audio", "Racing Game"],
     github: "https://github.com/bpn333/godot/tree/master/car",
-    live: "https://github.com/bpn333/godot/releases/tag/v1.0.0",
+    build: "https://github.com/bpn333/godot/releases/tag/v1.0.0",
   },
 ];
 

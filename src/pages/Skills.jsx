@@ -9,7 +9,7 @@ export default function Skills() {
                 animate={{ opacity: 1, y: 0 }}
             >
                 <h1 className="text-3xl font-bold">Skills</h1>
-                <p className="mt-2 text-gray-600 dark:text-gray-300 max-w-2xl">
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
                     Technologies and tools I use to design, build, and deploy software.
                 </p>
             </motion.header>

@@ -16,17 +16,17 @@ export default function Home() {
 
             <section className="mt-10">
                 <motion.div
-                    className="flex flex-col gap-10 justify-center sm:flex-row sm:gap-20 items-center"
+                    className="flex flex-col gap-10 justify-center sm:flex-row sm:gap-25 items-center"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                 >
-                    <div className="w-63 h-63 rounded-full overflow-hidden shadow">
+                    <div className="size-63 sm:size-70 rounded-full overflow-hidden shadow">
                         <img src="/imgs/bipin.jpg" alt="Bipin Lamsal" fetchPriority='high' className="w-full h-full object-cover" />
                     </div>
 
                     <div className="flex-1/2 grow-0">
                         <h2 className="text-2xl font-bold">Something About Me!</h2>
-                        <p className='mt-3 text-gray-700 dark:text-gray-300'>
+                        <p className='mt-4 text-gray-700 dark:text-gray-300'>
                             Name : Bipin Lamsal<br />
                             DOB : 2004 March 07<br />
                             Sex : Male<br />
@@ -36,15 +36,30 @@ export default function Home() {
                             Location: Burari, Delhi<br />
                         </p>
                         <motion.div
-                            className='mt-3 flex items-center'
+                            className='mt-4 flex items-center'
                             initial={{ gap: "0px", x: -20 }}
                             animate={{ gap: "15px", x: 0 }}
                         >
                             {
                                 contacts?.map((dta) => (
-                                    <a className='hover:scale-110 transition-transform' key={dta.name} href={dta.link} title={dta.name} target="_blank">
-                                        <dta.icon className="hover:text-indigo-600 dark:hover:text-indigo-300" />
-                                    </a>
+                                    <motion.a
+                                        key={dta.name}
+                                        href={dta.link}
+                                        target="_blank"
+                                        title={dta.name}
+                                        whileHover={{
+                                            y: -6,
+                                            scale: 1.15
+                                        }}
+                                        whileTap={{ scale: 0.95 }}
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 350,
+                                            damping: 18
+                                        }}
+                                    >
+                                        <dta.icon />
+                                    </motion.a>
                                 ))
                             }
                         </motion.div>
