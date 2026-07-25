@@ -18,21 +18,53 @@ export default function Skills() {
                 {skills.map((group, i) => (
                     <motion.div
                         key={group.category}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.08 }}
                         className="p-5 rounded-lg border bg-neutral-50 dark:bg-gray-900 dark:border-gray-800"
+                        variants={{
+                            hidden: {
+                                opacity: 0,
+                                y: 20
+                            },
+                            show: {
+                                opacity: 1,
+                                y: 0,
+                                transition: {
+                                    delay: i * 0.08,
+                                    staggerChildren: 0.05,
+                                },
+                            },
+                        }}
+                        initial="hidden"
+                        whileInView="show"
                     >
-                        <h2 className="text-lg font-semibold">{group.category}</h2>
+                        <div className="flex gap-3 items-center">
+                            <group.icon size={20} />
+                            <h2 className="text-lg font-semibold">{group.category}</h2>
+                        </div>
+                        <p className="mt-3 text-sm">{group.desc}</p>
 
                         <div className="mt-4 flex flex-wrap gap-2">
-                            {group.items.map(skill => (
-                                <span
+                            {group.items.map((skill, index) => (
+                                <motion.span
                                     key={skill}
-                                    className="text-sm text-text px-3 py-1 rounded bg-gray-100 dark:bg-gray-800 hover:bg-text hover:text-gray-100 dark:hover:text-gray-800 cursor-pointer"
+                                    variants={{
+                                        hidden: { opacity: 0, scale: 0.5 },
+                                        show: {
+                                            opacity: 1,
+                                            scale: 1,
+                                            transition: {
+                                                type: "spring",
+                                                stiffness: 300,
+                                            },
+                                        },
+                                    }}
+                                    whileHover={{
+                                        y: -4,
+                                        scale: 1.08,
+                                    }}
+                                    className="cursor-pointer rounded bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800"
                                 >
                                     {skill}
-                                </span>
+                                </motion.span>
                             ))}
                         </div>
                     </motion.div>

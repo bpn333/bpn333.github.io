@@ -1,5 +1,4 @@
 import { Github, Mail } from "lucide-react";
-import { label } from "motion/react-client";
 
 const experience = [
   {
