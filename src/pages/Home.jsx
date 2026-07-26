@@ -8,9 +8,7 @@ export default function Home() {
             <motion.header initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                 <h1 className="text-3xl font-bold">Hi — I am Bipin Lamsal.</h1>
                 <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    I'm a final-year Computer Science Engineering student who enjoys building real,
-                    working software instead of just prototypes. My work focuses on modern web
-                    applications, performance, and clean system design.
+                    I'm a Computer Science Engineer who enjoys building software that people can actually use. I focus on modern web technologies, scalable backend systems, and creating experiences that are fast, reliable, and thoughtfully designed.
                 </p>
             </motion.header>
 
@@ -30,7 +28,7 @@ export default function Home() {
                             Name : Bipin Lamsal<br />
                             DOB : 2004 March 07<br />
                             Sex : Male<br />
-                            Education : Computer Science Engineer<br />
+                            Profession : Software Engineer<br />
                             Email : <a href="mailto:bipinlamsal2004@gmail.com" className='text-indigo-600 dark:text-indigo-300'>bipinlamsal2004@gmail.com</a><br />
                             Religion: Hindu<br />
                             Location: Burari, Delhi<br />
