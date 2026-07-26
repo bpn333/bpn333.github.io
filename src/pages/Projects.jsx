@@ -40,37 +40,24 @@ export default function Projects() {
                             ))}
                         </div>
 
-                        <div className="mt-4 flex gap-4 text-sm">
-                            {project.github && (
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    className="text-indigo-600 dark:text-indigo-300 hover:underline"
-                                >
-                                    GitHub
-                                </a>
-                            )}
+                        {
+                            project.links &&
+                            <div className="mt-4 flex gap-4 text-sm">
+                                {
+                                    Object.entries(project.links).map(([key, value], indx) => (
+                                        <a
+                                            key={indx}
+                                            href={value}
+                                            target="_blank"
+                                            className="text-indigo-600 dark:text-indigo-300 hover:underline"
+                                        >
+                                            {key}
+                                        </a>
+                                    ))
+                                }
+                            </div>
+                        }
 
-                            {project.live && (
-                                <a
-                                    href={project.live}
-                                    target="_blank"
-                                    className="text-indigo-600 dark:text-indigo-300 hover:underline"
-                                >
-                                    Live demo
-                                </a>
-                            )}
-
-                            {project.build && (
-                                <a
-                                    href={project.build}
-                                    target="_blank"
-                                    className="text-indigo-600 dark:text-indigo-300 hover:underline"
-                                >
-                                    Build
-                                </a>
-                            )}
-                        </div>
                     </motion.div>
                 ))}
             </section>

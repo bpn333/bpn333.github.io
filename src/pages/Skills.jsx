@@ -35,6 +35,7 @@ export default function Skills() {
                         }}
                         initial="hidden"
                         whileInView="show"
+                        viewport={{ once: true }}
                     >
                         <div className="flex gap-3 items-center">
                             <group.icon size={20} />
