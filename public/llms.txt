@@ -1,0 +1,32 @@
+# Bipin Lamsal | Portfolio
+
+> Personal portfolio for Bipin Lamsal, a developer focused on full-stack web applications, CMS platforms, and practical software projects. The site highlights featured work, technical skills, professional experience, and contact details.
+
+This portfolio is organized around a few core areas: an introduction page, a projects showcase, a skills overview, a professional experience section, and direct contact links.
+
+## Site sections
+
+- [Home](https://bpn.localplayer.dev/#/): Main landing page and introduction to the portfolio.
+- [Projects](https://bpn.localplayer.dev/#/projects): Featured applications, experiments, and open-source work.
+- [Skills](https://bpn.localplayer.dev/#/skills): Technical stack including frontend, backend, databases, DevOps, and tools.
+- [Experience](https://bpn.localplayer.dev/#/experience): Professional background and current work context.
+- [Config](https://bpn.localplayer.dev/#/config): If humans shipped with config files, this would be mine. Explore my preferences, hobbies, favorite tools, coding philosophy, and a few questionable achievements.
+
+## Featured projects
+
+- [FormalMonkey CMS](https://formalmonkey.com): A multi-tenant CMS platform for building and deploying business websites with visual editing and hosting features.
+- [ChripDown](https://chripdown.vercel.app): A social platform inspired by Twitter with Markdown posts, authentication, and responsive UI.
+- [Notepad+++](https://github.com/bpn333/notepad-plus-plus-plus): A lightweight desktop-style text editor with tabbed editing and file management.
+- [Marketplace Platform](https://our-marketplace.netlify.app/): An OLX-style marketplace with listings, authentication, and purchase analytics.
+- [School ERP Portal](https://github.com/bpn333/ERP-PORTAL): A Django-based academic portal for managing students, results, and administration data.
+
+## Professional context
+
+- [WebMedia Infotech](https://webmediainfotech.com): Current internship experience focused on full-stack development, CMS architecture, and deployment work.
+
+## Optional
+
+- [GitHub](https://github.com/bpn333): Code repositories and public projects.
+- [LinkedIn](https://www.linkedin.com/in/bpn333): Professional profile and networking.
+- [Email](mailto:bipinlamsal2004@gmail.com): Direct contact email.
+- [Resume](https://drive.google.com/file/d/1ghEGyeeoXNxXf3c9ladZmwkDu4i8CYWm/view?usp=sharing): Downloadable resume.
