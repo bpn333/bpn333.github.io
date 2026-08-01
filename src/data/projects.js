@@ -20,6 +20,16 @@ const projects = [
     },
   },
   {
+    name: "ToolHub",
+    description:
+      "A hand-curated directory of software and developer tools built for fast discovery instead of endless scrolling. Every listing is manually categorized, searchable in milliseconds, SEO optimized, and presented with concise descriptions so developers can quickly find the right tool. The platform is generated statically for exceptional performance while supporting thousands of pages, category indexes, sitemaps, structured metadata, and a clean browsing experience.",
+    tags: ["Astro", "Tailwind CSS", "Static Site", "SEO", "Markdown"],
+    links: {
+      Github: "https://github.com/bpn333/toolhub",
+      Website: "https://toolhub.ext.io",
+    },
+  },
+  {
     name: "ChripDown",
     description:
       "An open social platform inspired by Twitter that supports Markdown-based posts, Google authentication, customizable user profiles, and a modern responsive interface. Built to explore unrestricted expression, real-time interaction, and scalable frontend architecture while delivering a smooth and engaging social experience.",

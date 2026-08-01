@@ -26,10 +26,10 @@ export default function Home() {
                         <h2 className="text-2xl font-bold">Something About Me!</h2>
                         <p className='mt-4 text-gray-700 dark:text-gray-300'>
                             Name : Bipin Lamsal<br />
-                            DOB : 2004 March 07<br />
                             Sex : Male<br />
+                            DOB : <a target="_blank" href='https://07032004.xyz' className='text-indigo-600 dark:text-indigo-300'>07 March, 2004 </a><br />
                             Profession : Software Engineer<br />
-                            Email : <a href="mailto:bipinlamsal2004@gmail.com" className='text-indigo-600 dark:text-indigo-300'>bipinlamsal2004@gmail.com</a><br />
+                            Email : <a target="_blank" href="mailto:bipinlamsal2004@gmail.com" className='text-indigo-600 dark:text-indigo-300'>bipinlamsal2004@gmail.com</a><br />
                             Religion: Hindu<br />
                             Location: Burari, Delhi<br />
                         </p>

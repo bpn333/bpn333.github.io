@@ -15,6 +15,7 @@ This portfolio is organized around a few core areas: an introduction page, a pro
 ## Featured projects
 
 - [FormalMonkey CMS](https://formalmonkey.com): A multi-tenant CMS platform for building and deploying business websites with visual editing and hosting features.
+- [ToolHub](https://toolhub.ext.io): A hand-curated directory of software and developer tools with fast search, SEO-optimized pages, and static performance.
 - [ChripDown](https://chripdown.vercel.app): A social platform inspired by Twitter with Markdown posts, authentication, and responsive UI.
 - [Notepad+++](https://github.com/bpn333/notepad-plus-plus-plus): A lightweight desktop-style text editor with tabbed editing and file management.
 - [Marketplace Platform](https://our-marketplace.netlify.app/): An OLX-style marketplace with listings, authentication, and purchase analytics.
