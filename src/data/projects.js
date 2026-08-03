@@ -26,7 +26,7 @@ const projects = [
     tags: ["Astro", "Tailwind CSS", "Static Site", "SEO", "Markdown"],
     links: {
       Github: "https://github.com/bpn333/toolhub",
-      Website: "https://toolhub.ext.io",
+      Website: "https://toolhub.07032004.xyz",
     },
   },
   {
