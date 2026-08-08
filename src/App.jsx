@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
+import Seo from "./components/Seo";
 import Config from "./pages/Config";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="bg-background text-text min-h-screen">
       <Header theme={theme} setTheme={setTheme} />
+      <Seo />
       <main className="mx-auto max-w-5xl px-4 py-8">
         <Routes>
           <Route path="/" element={<Home />} />
