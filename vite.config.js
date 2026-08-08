@@ -16,7 +16,7 @@ export default defineConfig({
     }),
     sitemap({
       hostname: "https://bpn.07032004.xyz",
-      dynamicRoutes: links.map((i) => i.path),
+      dynamicRoutes: links.map((i) => i.path).filter((p) => p != "/"),
       exclude: ["/google994689eea4e12801"],
     }),
   ],

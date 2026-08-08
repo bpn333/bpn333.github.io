@@ -6,7 +6,7 @@ This portfolio is organized around a few core areas: an introduction page, a pro
 
 ## Site sections
 
-- [Home](https://bpn.07032004.xyz): Main landing page and introduction to the portfolio.
+- [Home](https://bpn.07032004.xyz/): Main landing page and introduction to the portfolio.
 - [Projects](https://bpn.07032004.xyz/projects): Featured applications, experiments, and open-source work.
 - [Skills](https://bpn.07032004.xyz/skills): Technical stack including frontend, backend, databases, DevOps, and tools.
 - [Experience](https://bpn.07032004.xyz/experience): Professional background and current work context.
