@@ -6,11 +6,11 @@ This portfolio is organized around a few core areas: an introduction page, a pro
 
 ## Site sections
 
-- [Home](https://bpn.localplayer.dev/#/): Main landing page and introduction to the portfolio.
-- [Projects](https://bpn.localplayer.dev/#/projects): Featured applications, experiments, and open-source work.
-- [Skills](https://bpn.localplayer.dev/#/skills): Technical stack including frontend, backend, databases, DevOps, and tools.
-- [Experience](https://bpn.localplayer.dev/#/experience): Professional background and current work context.
-- [Config](https://bpn.localplayer.dev/#/config): If humans shipped with config files, this would be mine. Explore my preferences, hobbies, favorite tools, coding philosophy, and a few questionable achievements.
+- [Home](https://bpn.07032004.xyz): Main landing page and introduction to the portfolio.
+- [Projects](https://bpn.07032004.xyz/projects): Featured applications, experiments, and open-source work.
+- [Skills](https://bpn.07032004.xyz/skills): Technical stack including frontend, backend, databases, DevOps, and tools.
+- [Experience](https://bpn.07032004.xyz/experience): Professional background and current work context.
+- [Config](https://bpn.07032004.xyz/config): If humans shipped with config files, this would be mine. Explore my preferences, hobbies, favorite tools, coding philosophy, and a few questionable achievements.
 
 ## Featured projects
 

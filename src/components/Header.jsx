@@ -2,39 +2,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Moon, SunDim } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { links } from "../data/navLinks";
 
 export default function Header({ theme, setTheme }) {
   const [open, setOpen] = useState(false);
 
   const navItem = ({ isActive }) =>
     isActive ? "font-medium" : "text-gray-600 dark:text-gray-300";
-
-  const links = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "Projects",
-      path: "/projects",
-    },
-    {
-      name: "Skills",
-      path: "/skills",
-    },
-    {
-      name: "Experience",
-      path: "/experience",
-    },
-    {
-      name: "Config",
-      path: "/config",
-    },
-    {
-      name: "Online",
-      path: "/online",
-    },
-  ];
 
   return (
     <header className="bg-background text-text border-b border-gray-300 dark:border-gray-800">

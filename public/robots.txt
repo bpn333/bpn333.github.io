@@ -11,4 +11,4 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-Sitemap: https://bpn.localplayer.dev/sitemap.xml
+Sitemap: https://bpn.07032004.xyz/sitemap.xml
