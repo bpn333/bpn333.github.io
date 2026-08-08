@@ -11,6 +11,7 @@ This portfolio is organized around a few core areas: an introduction page, a pro
 - [Skills](https://bpn.07032004.xyz/skills): Technical stack including frontend, backend, databases, DevOps, and tools.
 - [Experience](https://bpn.07032004.xyz/experience): Professional background and current work context.
 - [Config](https://bpn.07032004.xyz/config): If humans shipped with config files, this would be mine. Explore my preferences, hobbies, favorite tools, coding philosophy, and a few questionable achievements.
+- [Online Presence](https://bpn.07032004.xyz/online): A central hub of my digital footprint, linking all platforms, identities, domains, and places I exist online under the name bpn333.
 
 ## Featured projects
 
