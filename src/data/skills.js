@@ -1,10 +1,10 @@
 import {
-  CodeXml,
-  Server,
-  Database,
-  Wrench,
-  MonitorCog,
   Braces,
+  CodeXml,
+  Database,
+  MonitorCog,
+  Server,
+  Wrench,
 } from "lucide-react";
 
 const skills = [
